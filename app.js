@@ -59,4 +59,24 @@ var highScores={
     play(userQuestions[i].question,userQuestions[i].answer);
   
   }
-    
+
+  
+
+if(score>highScores.scoreTwo){
+    console.log("Your final score is "+score);
+  console.log("\nCongratulations!\n");
+
+    console.log("The high scores are:\n"+highScores.first+"\n"+highScores.second+"\n");
+
+ console.log("Please send a screenshot of your\nhigh score.");
+}
+ if(score===highScores.scoreTwo){
+  console.log("4/5! Outstanding!\n");
+
+  console.log("\nThe high scores are:\n"+highScores.first+"\n"+highScores.second);
+ }
+if(score<highScores.scoreTwo){
+console.log("Your score is : " + score);
+console.log("\nPlease try again ! \n");
+}
+ 
