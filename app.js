@@ -43,4 +43,20 @@ var highScores={
   ]
   
   var score=0;
+  function play(question,answer){
+    var userAns=readlineSync.question(question);
+    if(userAns.toLowerCase()===answer){
+      console.log("You are right!\n");
+      score=score+1;
+    }
+    else{
+      console.log("You are wrong!\n")
+    }
+  }
   
+  
+  for(i=0;i<userQuestions.length;i++){
+    play(userQuestions[i].question,userQuestions[i].answer);
+  
+  }
+    
